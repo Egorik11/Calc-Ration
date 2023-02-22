@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.active{
+  background: gray;
+  color: #fff;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background: #b1e6da;
+  min-height: 100vh;
+  display: flex;
+}
+
+.intro{
+  background-color: #DCFAF6;
+  padding: 50px 0 50px;
+  width: 800px;
+  border-radius: 20px;
+  margin: 70px auto;
+}
+
+.intro .title{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 32px;
+  font-family: 'Poppins';
+}
+
+.calculating .subtitle{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.gender{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.listGenders{
+  width: 150px;
+  margin: auto;
+}
+
+.listRation{
+  width: 250px;
+  margin: auto;
+}
+
+.ration{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit{
+  width: 300px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.body{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:30px;
+}
+
+.body .input{
+  margin: 0 20px;
+}
+
+.showResult{
+  padding:20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showMessage{
+  display: flex;
+  align-items: flex-end;
+}
+
+.messageAboutActivity{
+  padding: 30px 60px;
+}
+
+.hide{
+  display: none;
+}
+
+.showMessage{
+  border: 1px solid gray;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

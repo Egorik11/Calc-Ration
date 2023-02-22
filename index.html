@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Calc Ration</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="intro">
+      <h1 class="title">Рассчитаем вашу потребность в калориях?</h1>
+      <div class="calculating">
+        <div class="subtitle">
+          <p>Ваш пол</p>
+        </div>
+        <div class="gender">
+          <select id="gender" class="form-select listGenders" aria-label="Default select example">
+            <option class="option" value="Мужчина">Мужчина</option>
+            <option class="option" value="Женщина">Женщина</option>
+          </select>
+        </div>
+
+        <div class="subtitle">
+          <p>Конституция тела</p>
+        </div>
+        <div class="body">
+          <input id="weight" placeholder="Введите ваш вес (кг)" type="text" class="input form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <input id="height" placeholder="Введите ваш рост (см)" type="text" class="input form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <input id="age" placeholder="Введите ваш возраст" type="text" class="input form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="subtitle">
+          <p>Выберите вашу физическая активность</p>
+        </div>
+        <div class="ration">
+          <select id="ration" class="form-select listRation" aria-label="Default select example">
+            <option class="option" value="1.2">Низкая активность</option>
+            <option class="option" value="1.375">Невысокая активность</option>
+            <option class="option" value="1.65">Умеренная активность</option>
+            <option class="option" value="1.725">Высокая активность</option>
+          </select>
+        </div>
+        <div class="showResult">
+          <div onclick=calcRation() class="btn submit btn-light">
+            Показать результат
+          </div>
+
+          <div class="showMessage">
+          </div>
+        </div>
+
+        <div class="messageAboutActivity hide">
+          Например, Ваш основной обмен веществ 1500 ккал, а коэффициент активности 1,5. Соответственно, в день Вы
+          расходуете примерно 2250 ккал. Для того, чтобы начать избавляться от жира нужно создать дефицит. И тут тоже
+          главное не переусердствовать. Все дают разные рекомендации, однако лучше урезать калорийность примерно на 20%.
+          В этом случае не произойдёт «молниеносного похудения», но Вы не нанесёте ущерб здоровью и, при правильном
+          балансе нутриентов в рационе, не будете терять мышечную массу. <br><br>
+          В нашем случае, 20% — это 450 ккал, которые нам
+          нужно вычесть. То есть при таких данных, для похудения, нужно чтобы калорийность Вашего рациона варьировалась
+          в пределах 1500 — 1800 ккал в день. Сейчас существует много мобильных приложений, которые позволяют
+          подсчитывать количество ккал получаемых с пищей, поэтому это не на столько утомительно. Сложность возникает с
+          определением объёма порций. Это можно делать на глаз, а можно купить кухонные весы. <br><br>
+          Со временем, Вы
+          привыкнете
+          и сможете без подсчётов определять примерный калораж своего рациона. И всё-таки на начальном этапе, я советую
+          попробовать в течение недели вести подсчёты калорийности съеденного Вами и тогда Вы сможете понять реальные
+          цифры. Очень часто мы сами не осознаём сколько едим, и, как правило, не учитываем все возможные перекусы и
+          напитки. <br><br>
+          Понаблюдайте за этим неделю, проанализируйте то, что едите и что «весит больше всего» в Вашем
+          суточном калораже. Иногда достаточно просто перестать кушать простые углеводы в виде шоколадок и печенья или
+          заменить их на на рецепты пп-десертов и это уже создаст дефицит. К тому же сладкое мы обычно едим не потому,
+          что голодны, а потому, что привыкли себя «баловать».
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
